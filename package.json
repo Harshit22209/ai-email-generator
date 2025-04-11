@@ -1,13 +1,12 @@
 {
   "name": "ai-email-generator",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "server": "nodemon server.js",
-    "client": "cd client && npm start",
     "dev": "nodemon server.js",
-    "heroku-postbuild": "cd client && npm install && npm run build"
+    "build": "cd client && npm install && npm run build",
+    "vercel-build": "npm run build"
   },
   "keywords": [],
   "author": "",
