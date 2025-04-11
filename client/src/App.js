@@ -80,8 +80,8 @@ function App() {
         throw new Error('Failed to send email');
       }
 
-      // Fix: use the response data or remove the unused variable
-      const { success, message } = await response.json();
+      // Fix: Just extract the message without creating unused variables
+      const { message } = await response.json();
       setSendStatus(message || 'Email sent successfully!');
       
       // Clear form after successful send
